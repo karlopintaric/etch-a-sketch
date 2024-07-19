@@ -16,7 +16,7 @@ function hoverFill(e) {
         }
 
         squareStyle.backgroundColor = `rgb(${rgbValues.join(',')})`;
-        squareStyle.opacity = '0.1';
+        squareStyle.opacity = '0.5';
     } else if (squareStyle.opacity < 1) {
         squareStyle.opacity = Number(squareStyle.opacity) + 0.1;
     } else {
@@ -25,7 +25,7 @@ function hoverFill(e) {
 };
 
 btnChangeDim.addEventListener('click', () => {
-    let numSquares = 101;
+    let numSquares;
     while (!numSquares || numSquares > 100) {
         numSquares = parseInt(prompt('Enter the number of squares per side:'));
     };
