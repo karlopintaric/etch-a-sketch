@@ -45,8 +45,8 @@ function drawSquares(dim = 16) {
         squareDiv.setAttribute('id', `square${i}`)
         squareDiv.classList.add('square');
 
-        squareDiv.style.width = `${(CONTAINER_WIDTH - dim - 1) / dim - 4}px`;
-        squareDiv.style.height = `${(CONTAINER_HEIGHT - dim - 1) / dim - 4}px`;
+        squareDiv.style.width = `${CONTAINER_WIDTH / dim}px`;
+        squareDiv.style.height = `${CONTAINER_HEIGHT / dim}px`;
 
         squareDiv.addEventListener('mouseover', hoverFill);
 

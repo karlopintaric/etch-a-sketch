@@ -8,8 +8,6 @@ body {
 }
 
 .square {
-    border: solid black;
-    border-width: 2px 2px;
     flex: 0 0 auto;
 }
 
@@ -20,9 +18,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-content: flex-start;
-    gap: 1px 1px;
+    align-content: center;
     flex: 0 0 auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 button {
